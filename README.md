@@ -1,8 +1,6 @@
-[Japanese]
-# Tensorflow2-ObjectDetectionAPI-Colab-Hands-On
+# Tensorflow2-ObjectDetectionAPI-Controller
 ![mkv4t-6ilnu](https://user-images.githubusercontent.com/37477845/94301550-b46dc180-ffa5-11ea-8a1c-7fdf14278cd9.gif)
 
-Tensorflow2 Object Detection APIのハンズオン用資料です。<br>
 VoTTでのアノテーションをローカルPCで実施し、学習～推論はColaboratory上で実施します。<br><br>
 以下の内容を含みます。<br>
 * 学習用データセット ※アノテーション未実施
@@ -14,7 +12,7 @@ VoTTでのアノテーションをローカルPCで実施し、学習～推論�
 <summary>ディレクトリ構成</summary>
 
 <pre>
-│ [Colaboratory]Tensorflow2_ObjectDetectionAPI_Colab_Hands_On.ipynb
+│ [Colaboratory]Tensorflow2_ObjectDetectionAPI_Controller.ipynb
 |
 ├─01_train_data─┬─000000.jpg
 │               │     :
@@ -246,8 +244,4 @@ Colaboratory上の「Tensorflow2-ObjectDetectionAPI-Colab-Hands-On/03_pretrained
 * 推論
 * 推論結果確認
 
-# Author
-高橋かずひと(https://twitter.com/KzhtTkhs)
- 
-# License 
-Tensorflow2-ObjectDetectionAPI-Colab-Hands-On is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+Anaconda(https://www.anaconda.com/products/individual) にある 64-Bit Graphical Installer をDL
