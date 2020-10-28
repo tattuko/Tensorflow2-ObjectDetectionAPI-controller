@@ -1,4 +1,4 @@
-[Japanese/[English](https://github.com/Kazuhito00/Tensorflow2-ObjectDetectionAPI-Colab-Hands-On/blob/master/README_EN.md)] 
+[Japanese]
 # Tensorflow2-ObjectDetectionAPI-Colab-Hands-On
 ![mkv4t-6ilnu](https://user-images.githubusercontent.com/37477845/94301550-b46dc180-ffa5-11ea-8a1c-7fdf14278cd9.gif)
 
