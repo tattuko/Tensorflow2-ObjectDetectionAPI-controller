@@ -12,7 +12,7 @@ VoTTでのアノテーションをローカルPCで実施し、学習～推論�
 <summary>ディレクトリ構成</summary>
 
 <pre>
-│ [Colaboratory]Tensorflow2_ObjectDetectionAPI_Controller.ipynb
+│ [Colaboratory]Tensorflow2_controller.ipynb
 |
 ├─01_train_data─┬─000000.jpg
 │               │     :
@@ -28,13 +28,13 @@ VoTTでのアノテーションをローカルPCで実施し、学習～推論�
 │                                                                 └─variables─┬─variables.data-00000-of-00001
 │                                                                             └─variables.index
 │
-└─04_test_data─┬─000050.jpg
+└─04_test_data─┬─000101.jpg
                │     :
-               └─000099.jpg
+               └─000128.jpg
 
 </pre>
 
-#### [Colaboratory]Tensorflow2_ObjectDetectionAPI_Colab_Hands_On.ipynb
+#### [Colaboratory]Tensorflow2_controller.ipynb
 Colaboratory用スクリプト(環境設定、モデル訓練、推論結果確認)
 
 #### 01_train_data
@@ -67,6 +67,7 @@ Tensorflow 2.3.0
 * このリポジトリのローカル環境へのクローン
 * [VoTT](https://github.com/microsoft/VoTT)のインストール
 * Googleアカウント(Google Colaboratory、Googleドライブで使用)
+* [Anaconda](https://www.anaconda.com/products/individual)のインストール
 
 # 1. VoTT：アノテーション
 [VoTT](https://github.com/microsoft/VoTT)を使用してアノテーションを行い、TFRecord形式で出力します。
@@ -77,12 +78,12 @@ Tensorflow 2.3.0
 #### 「新規プロジェクト」を選択する
 ![2020-09-19 (3)](https://user-images.githubusercontent.com/37477845/94047557-38407600-fe0d-11ea-8d10-041a27546e85.png)
 #### プロジェクト設定を行う
-表示名：Tensorflow2-ObjectDetectionAPI-Colab-Hands-On<br>
+表示名：Tensorflow2-controller<br>
 セキュリティトークン：Generate New Security Token<br>
 ソース接続：「Add Connection」を押下<br>
 ![2020-09-19 (4)](https://user-images.githubusercontent.com/37477845/94047561-3971a300-fe0d-11ea-8bd2-4bd621cd531c.png)
 #### ソース接続の接続設定を行う
-表示名：Tensorflow2-ObjectDetectionAPI-Colab-Hands-On-TrainData
+表示名：Tensorflow2-controller-TrainData
 ![2020-09-19 (6)](https://user-images.githubusercontent.com/37477845/94047562-3a0a3980-fe0d-11ea-8619-7dab9d63160b.png)
 プロバイダー：ローカルファイルシステム
 ![2020-09-19 (7)](https://user-images.githubusercontent.com/37477845/94047564-3aa2d000-fe0d-11ea-9aea-b66aab732841.png)
@@ -91,7 +92,7 @@ Tensorflow 2.3.0
 #### ターゲット接続の接続設定を行う
 ターゲット接続：Add Connection
 ![2020-09-19 (9)](https://user-images.githubusercontent.com/37477845/94047569-3bd3fd00-fe0d-11ea-958d-745d86d3436f.png)
-表示名：Tensorflow2-ObjectDetectionAPI-Colab-Hands-On-TFRecord<br>
+表示名：Tensorflow2-controller-TFRecord<br>
 プロバイダー：ローカルファイルシステム<br>
 フォルダーパス：クローンしたリポジトリの「02_tfrecord」ディレクトリを指定<br>
 ![2020-09-19 (10)](https://user-images.githubusercontent.com/37477845/94047571-3c6c9380-fe0d-11ea-94fb-94a4a4dd4467.png)
@@ -106,9 +107,9 @@ Tensorflow 2.3.0
 <details>
 <summary>VoTTを使用してアノテーションを実施</summary>
 	
-#### マウス左ドラッグで魚を選択する
+#### マウス左ドラッグでコントローラーを選択する
 ![2020-09-19 (13)](https://user-images.githubusercontent.com/37477845/94047578-3e365700-fe0d-11ea-86b9-2d88ef24d0c0.png)
-#### TAGSから「Fish」を選択する
+#### TAGSから「controller」を選択する
 南京錠のマークを選択しておくことでタグを使用するタグを固定することが可能
 ![2020-09-19 (14)](https://user-images.githubusercontent.com/37477845/94047588-41314780-fe0d-11ea-9574-0cb6c77f8be5.png)
 <!-- #### 12
@@ -187,24 +188,24 @@ tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) fo
 * Tensorflow2-ObjectDetectionAPI-Colab-Hands-Onリポジトリクローン
 
 # 3.TFRecordアップロード
-「Tensorflow2-ObjectDetectionAPI-Colab-Hands-On/02_tfrecord」に<br>VoTTからエクスポートしたTFRecordとtf_label_map.pbtxtを格納してください。<br>
+「Tensorflow2-controller/02_tfrecord」に<br>VoTTからエクスポートしたTFRecordとtf_label_map.pbtxtを格納してください。<br>
 格納後、以下を実行してください。
 * 学習データ/検証データ 分割
 
 # 4. パイプラインコンフィグ修正
 「03_pretrained_model\efficientdet_d0_coco17_tpu-32\pipeline.config」のパイプラインコンフィグを以下のように修正して、<br>
-Colaboratory上の「Tensorflow2-ObjectDetectionAPI-Colab-Hands-On/03_pretrained_model」にアップロードしてください。<br>
+Colaboratory上の「Tensorflow2-controller/03_pretrained_model」にアップロードしてください。<br>
 <details>
 <summary>パイプラインコンフィグ修正箇所</summary>
 
 * 3行目(Line 3)：クラス数(num_classes)<br>変更前(Before) : 90<br>変更後(After) : 1<br>
 * 134行目(Line 134)：バッチサイズ(batch_size)<br>変更前(Before) : 128<br>変更後(After) : 16<br>
-* 161行目(Line 161)：ファインチューニング用のチェックポイント格納先(fine_tune_checkpoint)<br>変更前(Before) : "PATH_TO_BE_CONFIGURED"<br>変更後(After) : "/content/models/research/Tensorflow2-ObjectDetectionAPI-Colab-Hands-On/03_pretrained_model/efficientdet_d0_coco17_tpu-32/checkpoint/ckpt-0"
+* 161行目(Line 161)：ファインチューニング用のチェックポイント格納先(fine_tune_checkpoint)<br>変更前(Before) : "PATH_TO_BE_CONFIGURED"<br>変更後(After) : "/content/models/research/Tensorflow2-controller/03_pretrained_model/efficientdet_d0_coco17_tpu-32/checkpoint/ckpt-0"
 * 167行目(Line 167)：ファインチューニング方法(fine_tune_checkpoint_type)<br>変更前(Before) : "classification"<br>変更後(After) : "detection"<br>
 * 168行目(Line 168)：Googleカスタム 16ビットbrain浮動小数点の使用有無(use_bfloat16)<br>変更前(Before) : true<br>変更後(After) : false<br>
-* 172行目(Line 172)：ラベルマップファイルの格納先(label_map_path)<br>変更前(Before) : "PATH_TO_BE_CONFIGURED/label_map.txt"<br>変更後(After) : "/content/models/research/Tensorflow2-ObjectDetectionAPI-Colab-Hands-On/02_tfrecord/tf_label_map.pbtxt"<br>
+* 172行目(Line 172)：ラベルマップファイルの格納先(label_map_path)<br>変更前(Before) : "PATH_TO_BE_CONFIGURED/label_map.txt"<br>変更後(After) : "/content/models/research/Tensorflow2-controller/02_tfrecord/tf_label_map.pbtxt"<br>
 * 174行目(Line 174)：学習データの格納先(input_path)<br>変更前(Before) : "PATH_TO_BE_CONFIGURED/train2017-?????-of-00256.tfrecord"<br>変更後(After) : "/content/models/research/train_data/??????.tfrecord"<br>
-* 185行目(Line 185)：ラベルマップファイルの格納先(label_map_path)<br>変更前(Before) : "PATH_TO_BE_CONFIGURED/label_map.txt"<br>変更後(After) : "/content/models/research/Tensorflow2-ObjectDetectionAPI-Colab-Hands-On/02_tfrecord/tf_label_map.pbtxt"<br>
+* 185行目(Line 185)：ラベルマップファイルの格納先(label_map_path)<br>変更前(Before) : "PATH_TO_BE_CONFIGURED/label_map.txt"<br>変更後(After) : "/content/models/research/Tensorflow2-controller/02_tfrecord/tf_label_map.pbtxt"<br>
 * 189行目(Line 189)：バリデーションデータの格納先(input_path)<br>変更前(Before) : "PATH_TO_BE_CONFIGURED/val2017-?????-of-00032.tfrecord"<br>変更後(After) : "/content/models/research/val_data/??????.tfrecord"
 </details>
 
