@@ -222,4 +222,3 @@ Colaboratory上の「Tensorflow2-controller/03_pretrained_model」にアップ�
 * 推論
 * 推論結果確認
 
-Anaconda(https://www.anaconda.com/products/individual) にある 64-Bit Graphical Installer をDL
