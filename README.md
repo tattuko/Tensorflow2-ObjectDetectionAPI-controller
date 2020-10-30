@@ -222,3 +222,5 @@ Colaboratory上の「Tensorflow2-controller/03_pretrained_model」にアップ�
 * 推論
 * 推論結果確認
 
+960 * 540　にリサイズ
+
