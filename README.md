@@ -76,32 +76,32 @@ Tensorflow 2.3.0
 <summary>VoTTのプロジェクト設定</summary>
 	
 #### 「新規プロジェクト」を選択する
-![2020-09-19 (3)](https://user-images.githubusercontent.com/37477845/94047557-38407600-fe0d-11ea-8d10-041a27546e85.png)
+![2020-09-19 (3)](https://user-images.githubusercontent.com/53849682/97794196-2d61d800-1c3a-11eb-91e4-a095393537d1.png)
 #### プロジェクト設定を行う
 表示名：Tensorflow2-controller<br>
 セキュリティトークン：Generate New Security Token<br>
 ソース接続：「Add Connection」を押下<br>
-![2020-09-19 (4)](https://user-images.githubusercontent.com/37477845/94047561-3971a300-fe0d-11ea-8bd2-4bd621cd531c.png)
+![2020-09-19 (4)](https://user-images.githubusercontent.com/53849682/97794199-35ba1300-1c3a-11eb-908e-2427a6edcd15.png)
 #### ソース接続の接続設定を行う
 表示名：Tensorflow2-controller-TrainData
-![2020-09-19 (6)](https://user-images.githubusercontent.com/37477845/94047562-3a0a3980-fe0d-11ea-8619-7dab9d63160b.png)
+![2020-09-19 (6)](https://user-images.githubusercontent.com/53849682/97794201-394d9a00-1c3a-11eb-8134-557fd0a8c85b.png)
 プロバイダー：ローカルファイルシステム
-![2020-09-19 (7)](https://user-images.githubusercontent.com/37477845/94047564-3aa2d000-fe0d-11ea-9aea-b66aab732841.png)
+![2020-09-19 (7)](https://user-images.githubusercontent.com/53849682/97794202-3f437b00-1c3a-11eb-8652-3941ba91bb78.png)
 フォルダーパス：クローンしたリポジトリの「01_train_data」ディレクトリを指定
-![2020-09-19 (8)](https://user-images.githubusercontent.com/37477845/94047566-3b3b6680-fe0d-11ea-8534-8402652d9f32.png)
+![2020-09-19 (8)](https://user-images.githubusercontent.com/53849682/97794204-41a5d500-1c3a-11eb-9c0d-e9432f382995.png)
 #### ターゲット接続の接続設定を行う
 ターゲット接続：Add Connection
-![2020-09-19 (9)](https://user-images.githubusercontent.com/37477845/94047569-3bd3fd00-fe0d-11ea-958d-745d86d3436f.png)
+![2020-09-19 (9)](https://user-images.githubusercontent.com/53849682/97794206-44082f00-1c3a-11eb-8446-a680ca9da92d.png)
 表示名：Tensorflow2-controller-TFRecord<br>
 プロバイダー：ローカルファイルシステム<br>
 フォルダーパス：クローンしたリポジトリの「02_tfrecord」ディレクトリを指定<br>
-![2020-09-19 (10)](https://user-images.githubusercontent.com/37477845/94047571-3c6c9380-fe0d-11ea-94fb-94a4a4dd4467.png)
+![2020-09-19 (10)](https://user-images.githubusercontent.com/53849682/97794207-466a8900-1c3a-11eb-8a09-4cb13f481dff.png)
 <!-- #### 8
 ![2020-09-19 (11)](https://user-images.githubusercontent.com/37477845/94047572-3d052a00-fe0d-11ea-80cb-e6b2f39fbfc9.png)-->
 #### タグを追加し設定を保存する
 タグ：「Fish」を追加<br>
 「プロジェクトを保存」を押下
-![94047577-3d9dc080-fe0d-11ea-9f4f-b5fe7727fc12](https://user-images.githubusercontent.com/37477845/94283906-98a9f180-ff8c-11ea-9e16-a546b26ba763.png)
+![94047577-3d9dc080-fe0d-11ea-9f4f-b5fe7727fc12](https://user-images.githubusercontent.com/53849682/97794209-48cce300-1c3a-11eb-9a75-d7c3578a6885.png)
 </details>
 
 <details>
