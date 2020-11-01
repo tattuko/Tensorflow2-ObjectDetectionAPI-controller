@@ -99,7 +99,7 @@ Tensorflow 2.3.0
 <!-- #### 8
 ![2020-09-19 (11)](https://user-images.githubusercontent.com/37477845/94047572-3d052a00-fe0d-11ea-80cb-e6b2f39fbfc9.png)-->
 #### タグを追加し設定を保存する
-タグ：「Fish」を追加<br>
+タグ：「controller」を追加<br>
 「プロジェクトを保存」を押下
 ![94047577-3d9dc080-fe0d-11ea-9f4f-b5fe7727fc12](https://user-images.githubusercontent.com/53849682/97794209-48cce300-1c3a-11eb-9a75-d7c3578a6885.png)
 </details>
@@ -129,54 +129,13 @@ Tensorflow 2.3.0
 </details>
 
 <details>
-<summary>注意事項（詳細確認中）</summary>
+<summary>注意事項</summary>
 
 画像の端の対象をアノテーションする際に、以下のように端から少し隙間を設けてください。
 ![2020-09-19 (17)](https://user-images.githubusercontent.com/37477845/94047603-44c4ce80-fe0d-11ea-8c0d-3ebc2e740560.png)<br>
 問題の詳細は確認中ですが、隙間を開けずにアノテーションをすると、<br>
-VoTTの問題かTensorflowの問題か、モデル学習時に以下のエラーが発生します。
-<pre>
-W0921 13:29:32.965700 140050120722176 optimizer_v2.py:1275] Gradients do not exist for variables ['top_bn/gamma:0', 'top_bn/beta:0'] when minimizing the loss.
-Traceback (most recent call last):
-  File "object_detection/model_main_tf2.py", line 113, in <module>
-    tf.compat.v1.app.run()
-  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/platform/app.py", line 40, in run
-    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
-  File "/usr/local/lib/python3.6/dist-packages/absl/app.py", line 300, in run
-    _run_main(main, args)
-  File "/usr/local/lib/python3.6/dist-packages/absl/app.py", line 251, in _run_main
-    sys.exit(main(argv))
-  File "object_detection/model_main_tf2.py", line 110, in main
-    record_summaries=FLAGS.record_summaries)
-  File "/usr/local/lib/python3.6/dist-packages/object_detection/model_lib_v2.py", line 639, in train_loop
-    loss = _dist_train_step(train_input_iter)
-  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/def_function.py", line 780, in __call__
-    result = self._call(*args, **kwds)
-  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/def_function.py", line 807, in _call
-    return self._stateless_fn(*args, **kwds)  # pylint: disable=not-callable
-  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/function.py", line 2829, in __call__
-    return graph_function._filtered_call(args, kwargs)  # pylint: disable=protected-access
-  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/function.py", line 1848, in _filtered_call
-    cancellation_manager=cancellation_manager)
-  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/function.py", line 1924, in _call_flat
-    ctx, args, cancellation_manager=cancellation_manager))
-  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/function.py", line 550, in call
-    ctx=ctx)
-  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/execute.py", line 60, in quick_execute
-    inputs, attrs, num_outputs)
-tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
-  (0) Invalid argument:  assertion failed: [[0.15956609][0.103383526][0.109880842]...] [[0.23180081][0.133959055][0.132812485]...]
-	 [[{{node Assert_1/AssertGuard/else/_35/Assert_1/AssertGuard/Assert}}]]
-	 [[MultiDeviceIteratorGetNextFromShard]]
-	 [[RemoteCall]]
-	 [[IteratorGetNext]]
-	 [[Loss/localization_loss_1/write_summary/summary_cond/pivot_t/_4/_111]]
-  (1) Invalid argument:  assertion failed: [[0.15956609][0.103383526][0.109880842]...] [[0.23180081][0.133959055][0.132812485]...]
-	 [[{{node Assert_1/AssertGuard/else/_35/Assert_1/AssertGuard/Assert}}]]
-	 [[MultiDeviceIteratorGetNextFromShard]]
-	 [[RemoteCall]]
-	 [[IteratorGetNext]]
-</pre>
+VoTTの問題かTensorflowの問題か、モデル学習時にエラーが発生します。
+
 </details>
 
 # 2. Colaboratory：Object Detection API設定
