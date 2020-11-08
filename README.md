@@ -139,7 +139,7 @@ VoTTの問題かTensorflowの問題か、モデル学習時にエラーが発生
 </details>
 
 # 2. Colaboratory：Object Detection API設定
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tattuko/Tensorflow2-controller/blob/master/[Colaboratory]Tensorflow2-controller.ipynb)<br>
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tattuko/Tensorflow2-controller/blob/main/[Colaboratory]Tensorflow2-controller.ipynb)<br>
 以降の作業はGoogle Colaboratory上で実施します。※パイプラインコンフィグ修正をのぞく<br>
 [Open In Colab]リンクからノートブックを開き、以下の順に実行してください。
 * Google Driveマウント
