@@ -144,7 +144,7 @@ VoTTの問題かTensorflowの問題か、モデル学習時にエラーが発生
 [Open In Colab]リンクからノートブックを開き、以下の順に実行してください。
 * Google Driveマウント
 * Tensorflow Object Detection API設定
-* Tensorflow2-ObjectDetectionAPI-Colab-Hands-Onリポジトリクローン
+* Tensorflow2-controllerリポジトリクローン
 
 # 3.TFRecordアップロード
 「Tensorflow2-controller/02_tfrecord」に<br>VoTTからエクスポートしたTFRecordとtf_label_map.pbtxtを格納してください。<br>
