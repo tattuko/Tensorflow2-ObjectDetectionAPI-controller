@@ -20,13 +20,13 @@ VoTTでのアノテーションをローカルPCで実施し、学習～推論�
 │      
 ├─02_tfrecord
 │      
-├─03_pretrained_model─efficientdet_d0_coco17_tpu-32─┬─pipeline.config
-│                                                   ├─checkpoint──┬─checkpoint
-│                                                   │             ├─ckpt-0.data-00000-of-00001
-│                                                   │             └─ckpt-0.index
-│                                                   └─saved_model─┬─saved_model.pb
-│                                                                 └─variables─┬─variables.data-00000-of-00001
-│                                                                             └─variables.index
+├─03_pretrained_model┬─efficientdet_d0_coco17_tpu-32─┬─checkpoint──┬─checkpoint
+│                    └─pipeline.config               |             ├─ckpt-0.data-00000-of-00001
+│                                                    │             └─ckpt-0.index
+│                                                    │             
+│                                                    └─saved_model─┬─saved_model.pb
+│                                                                  └─variables─┬─variables.data-00000-of-00001
+│                                                                              └─variables.index
 │
 └─04_test_data─┬─000101.jpg
                │     :
