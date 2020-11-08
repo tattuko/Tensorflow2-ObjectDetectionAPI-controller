@@ -1,5 +1,5 @@
 # Tensorflow2-controller
-![mkv4t-6ilnu](https://user-images.githubusercontent.com/37477845/94301550-b46dc180-ffa5-11ea-8a1c-7fdf14278cd9.gif)
+![Videotogif](https://user-images.githubusercontent.com/53849682/98470230-adce9d00-2227-11eb-9de0-2596827d3ccf.gif)
 
 VoTTでのアノテーションをローカルPCで実施し、学習～推論はColaboratory上で実施します。<br><br>
 以下の内容を含みます。<br>
