@@ -153,7 +153,7 @@ VoTTの問題かTensorflowの問題か、モデル学習時にエラーが発生
 * 学習データ/検証データ 分割
 
 # 4. パイプラインコンフィグ修正
-「03_pretrained_model\efficientdet_d0_coco17_tpu-32\pipeline.config」のパイプラインコンフィグを以下のように修正して、<br>
+「03_pretrained_model\pipeline.config」のパイプラインコンフィグを以下のように修正して、<br>
 Colaboratory上の「Tensorflow2-controller/03_pretrained_model」にアップロードしてください。<br>
 <details>
 <summary>パイプラインコンフィグ修正箇所</summary>
