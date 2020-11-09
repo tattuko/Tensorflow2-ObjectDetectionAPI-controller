@@ -68,6 +68,7 @@ Tensorflow 2.3.0
 * [VoTT](https://github.com/microsoft/VoTT)のインストール
 * Googleアカウント(Google Colaboratory、Googleドライブで使用)
 * [Anaconda](https://www.anaconda.com/products/individual)のインストール
+* 画像は960*540にリサイズしておくこと
 
 # 1. VoTT：アノテーション
 [VoTT](https://github.com/microsoft/VoTT)を使用してアノテーションを行い、TFRecord形式で出力します。
@@ -180,6 +181,3 @@ Colaboratory上の「Tensorflow2-controller/03_pretrained_model」にアップ�
 * モデルロード
 * 推論
 * 推論結果確認
-
-960 * 540　にリサイズ
-
