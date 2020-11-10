@@ -109,12 +109,10 @@ Tensorflow 2.3.0
 <summary>VoTTを使用してアノテーションを実施</summary>
 	
 #### マウス左ドラッグでコントローラーを選択する
-![2020-09-19 (13)](https://user-images.githubusercontent.com/37477845/94047578-3e365700-fe0d-11ea-86b9-2d88ef24d0c0.png)
+![2020-09-19 (13)](https://user-images.githubusercontent.com/53849682/98627515-c6d66b80-2357-11eb-9fac-a51f95131e16.png)
 #### TAGSから「controller」を選択する
 南京錠のマークを選択しておくことでタグを使用するタグを固定することが可能
-![2020-09-19 (14)](https://user-images.githubusercontent.com/37477845/94047588-41314780-fe0d-11ea-9574-0cb6c77f8be5.png)
-<!-- #### 12
-![2020-09-19 (15)](https://user-images.githubusercontent.com/37477845/94047598-442c3800-fe0d-11ea-9285-d72713520a65.png)-->
+![2020-09-19 (14)](https://user-images.githubusercontent.com/53849682/98627519-c938c580-2357-11eb-9558-5a2854b09c42.png)
 </details>
 
 <details>
@@ -124,16 +122,16 @@ Tensorflow 2.3.0
 プロバイダー：Tensorflow レコード<br>
 アセットの状態：タグ付きアセットのみ<br>
 「エクスポート設定を保存」を押下する
-![2020-09-19 (16)](https://user-images.githubusercontent.com/37477845/94047601-44c4ce80-fe0d-11ea-89fc-92b86e4ba3b8.png)
+![2020-09-19 (16)](https://user-images.githubusercontent.com/53849682/98627501-c1792100-2357-11eb-94f5-d60f5d084c6c.png)
 アノテーション画面からエクスポートマークを押下し、TFRecordをエクスポートする。
-![2020-09-19 (14)](https://user-images.githubusercontent.com/37477845/94047588-41314780-fe0d-11ea-9574-0cb6c77f8be5.png)
+![2020-09-19 (14)](https://user-images.githubusercontent.com/53849682/98627506-c211b780-2357-11eb-822e-99a74092412e.png)
 </details>
 
 <details>
 <summary>注意事項</summary>
 
 画像の端の対象をアノテーションする際に、以下のように端から少し隙間を設けてください。
-![2020-09-19 (17)](https://user-images.githubusercontent.com/37477845/94047603-44c4ce80-fe0d-11ea-8c0d-3ebc2e740560.png)<br>
+![2020-09-19 (17)](https://user-images.githubusercontent.com/53849682/98627510-c50ca800-2357-11eb-83f6-cc6bc7052c05.png)<br>
 問題の詳細は確認中ですが、隙間を開けずにアノテーションをすると、<br>
 VoTTの問題かTensorflowの問題か、モデル学習時にエラーが発生します。
 
