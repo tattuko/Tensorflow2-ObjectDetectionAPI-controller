@@ -56,10 +56,10 @@ Tensorflow 2.3.0 or later<br>
 OpenCV 3.4.2 or later
 
 # Overview
-1. VoTT：アノテーション(約30～60分)
+1. VoTT：アノテーション
 1. Colaboratory：Object Detection API設定
 1. パイプラインコンフィグ修正
-1. Colaboratory：モデル訓練(約25分)
+1. Colaboratory：モデル訓練
 1. Colaboratory：推論
 
 # Preparations
@@ -183,3 +183,12 @@ Colaboratory上の「Tensorflow2-controller/03_pretrained_model」にアップ�
 * モデルロード
 * 推論
 * 推論結果確認
+
+# 7. webcamでリアルタイムに検出
+以下の順に実行してください。
+Anacondaを起動
+*conda create --name envname -y python=3.7
+*conda activate envname
+*python -m pip install -U tensorflow-gpu tensorflow_datasets tensorflow-hub keras matplotlib opencv-python
+*cd Tensorflow2-controller
+*python webcam_demo.py
