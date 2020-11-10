@@ -56,7 +56,6 @@ Tensorflow 2.3.0 or later<br>
 OpenCV 3.4.2 or later
 
 # Overview
-2時間程度のボリュームの想定です。
 1. VoTT：アノテーション(約30～60分)
 1. Colaboratory：Object Detection API設定
 1. パイプラインコンフィグ修正
