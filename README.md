@@ -186,9 +186,13 @@ Colaboratory上の「Tensorflow2-controller/03_pretrained_model」にアップ�
 
 # 7. webcamでリアルタイムに検出
 以下の順に実行してください。
-Anacondaを起動
-*conda create --name envname -y python=3.7
-*conda activate envname
-*python -m pip install -U tensorflow-gpu tensorflow_datasets tensorflow-hub keras matplotlib opencv-python
-*cd Tensorflow2-controller
-*python webcam_demo.py
+* Anacondaを起動
+* conda create --name envname -y python=3.7
+* conda activate envname
+* python -m pip install -U tensorflow-gpu tensorflow_datasets tensorflow-hub keras matplotlib opencv-python
+* cd Tensorflow2-controller
+* python webcam_demo.py
+<br><br>
+モデルの読み込みパスはwebcam_demo.pyの
+* --model (デフォルト：'05_model/EfficientDetD0/saved_model')
+から変更できる。
