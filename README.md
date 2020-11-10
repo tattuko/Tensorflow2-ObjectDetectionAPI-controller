@@ -52,7 +52,8 @@ Colaboratory用スクリプト(環境設定、モデル訓練、推論結果確�
 </details>
 
 # Requirement
-Tensorflow 2.3.0
+Tensorflow 2.3.0 or later
+OpenCV 3.4.2 or later
 
 # Overview
 2時間程度のボリュームの想定です。
