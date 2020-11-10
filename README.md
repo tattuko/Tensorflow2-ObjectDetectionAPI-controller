@@ -52,7 +52,7 @@ Colaboratory用スクリプト(環境設定、モデル訓練、推論結果確�
 </details>
 
 # Requirement
-Tensorflow 2.3.0 or later
+Tensorflow 2.3.0 or later<br>
 OpenCV 3.4.2 or later
 
 # Overview
@@ -138,11 +138,16 @@ OpenCV 3.4.2 or later
 # 2. Colaboratory：Object Detection API設定
 [Colaboratory]を開くhttps://colab.research.google.com/notebooks/welcome.ipynb?hl=ja#scrollTo=5fCEDCU_qrC0<br>
 以降の作業はGoogle Colaboratory上で実施します。※パイプラインコンフィグ修正をのぞく<br>
+<details>
+<summary>プロジェクトを開く</summary>
+	
 ファイル→ノートブックのアップロードで[Colaboratory]Tensorflow2_controller.ipynbをローカルからアップロードする
 ![2020-11-10](https://user-images.githubusercontent.com/53849682/98653844-e209a100-2380-11eb-80ac-e3d47e0b9c3d.png)<br>
 * Google Driveマウント
 * Tensorflow Object Detection API設定
 * Tensorflow2-controllerリポジトリクローン
+	
+</details>
 
 # 3.TFRecordアップロード
 「Tensorflow2-controller/02_tfrecord」に<br>VoTTからエクスポートしたTFRecordとtf_label_map.pbtxtを格納してください。<br>
