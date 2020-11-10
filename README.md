@@ -67,8 +67,8 @@ OpenCV 3.4.2 or later
 事前準備として以下が必要です。
 * このリポジトリのローカル環境へのクローン
 * [VoTT](https://github.com/microsoft/VoTT)のインストール
-* Googleアカウント(Google Colaboratory、Googleドライブで使用)
 * [Anaconda](https://www.anaconda.com/products/individual)のインストール
+* Googleアカウント(Google Colaboratory、Googleドライブで使用)
 * 画像は960*540にリサイズしておくこと
 
 # 1. VoTT：アノテーション
@@ -142,7 +142,8 @@ OpenCV 3.4.2 or later
 <summary>プロジェクトを開く</summary>
 	
 ファイル→ノートブックのアップロードで[Colaboratory]Tensorflow2_controller.ipynbをローカルからアップロードする
-![2020-11-10](https://user-images.githubusercontent.com/53849682/98653844-e209a100-2380-11eb-80ac-e3d47e0b9c3d.png)<br>
+![2020-11-10](https://user-images.githubusercontent.com/53849682/98653844-e209a100-2380-11eb-80ac-e3d47e0b9c3d.png)<br><br>
+アップロードが終わったら、以下の順に実行していく<br>
 * Google Driveマウント
 * Tensorflow Object Detection API設定
 * Tensorflow2-controllerリポジトリクローン
