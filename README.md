@@ -97,8 +97,6 @@ Tensorflow 2.3.0
 プロバイダー：ローカルファイルシステム<br>
 フォルダーパス：クローンしたリポジトリの「02_tfrecord」ディレクトリを指定<br>
 ![2020-09-19 (10)](https://user-images.githubusercontent.com/53849682/97794207-466a8900-1c3a-11eb-8a09-4cb13f481dff.png)
-<!-- #### 8
-![2020-09-19 (11)](https://user-images.githubusercontent.com/37477845/94047572-3d052a00-fe0d-11ea-80cb-e6b2f39fbfc9.png)-->
 #### タグを追加し設定を保存する
 タグ：「controller」を追加<br>
 「プロジェクトを保存」を押下
@@ -137,9 +135,10 @@ Tensorflow 2.3.0
 </details>
 
 # 2. Colaboratory：Object Detection API設定
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tattuko/Tensorflow2-controller/blob/main/[Colaboratory]Tensorflow2-controller.ipynb)<br>
+[Colaboratory]を開くhttps://colab.research.google.com/notebooks/welcome.ipynb?hl=ja#scrollTo=5fCEDCU_qrC0<br>
 以降の作業はGoogle Colaboratory上で実施します。※パイプラインコンフィグ修正をのぞく<br>
-[Open In Colab]リンクからノートブックを開き、以下の順に実行してください。
+ファイル→ノートブックのアップロードで[Colaboratory]Tensorflow2_controller.ipynbをローカルからアップロードする
+![2020-11-10](https://user-images.githubusercontent.com/53849682/98653844-e209a100-2380-11eb-80ac-e3d47e0b9c3d.png)<br>
 * Google Driveマウント
 * Tensorflow Object Detection API設定
 * Tensorflow2-controllerリポジトリクローン
