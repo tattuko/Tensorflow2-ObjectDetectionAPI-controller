@@ -11,34 +11,11 @@ VoTTでのアノテーションをローカルPCで実施し、学習～推論�
 <details>
 <summary>ディレクトリ構成</summary>
 
-<pre>
-│ [Colaboratory]Tensorflow2_controller.ipynb
-|
-├─01_train_data─┬─000000.jpg
-│               │     :
-│               └─000049.jpg
-│      
-├─02_tfrecord
-│      
-├─03_pretrained_model┬─efficientdet_d0_coco17_tpu-32─┬─checkpoint──┬─checkpoint
-│                    └─pipeline.config               |             ├─ckpt-0.data-00000-of-00001
-│                                                    │             └─ckpt-0.index
-│                                                    │             
-│                                                    └─saved_model─┬─saved_model.pb
-│                                                                  └─variables─┬─variables.data-00000-of-00001
-│                                                                              └─variables.index
-│
-└─04_test_data─┬─000101.jpg
-               │     :
-               └─000128.jpg
-
-</pre>
-
 #### [Colaboratory]Tensorflow2_controller.ipynb
 Colaboratory用スクリプト(環境設定、モデル訓練、推論結果確認)
 
 #### 01_train_data
-学習用データセット ※アノテーション未実施
+学習用データセット
 
 #### 02_tfrecord
 アノテーション実施済みTFRecord格納先
@@ -49,20 +26,23 @@ Colaboratory用スクリプト(環境設定、モデル訓練、推論結果確�
 #### 04_test_data
 テスト用データセット
 
+#### 05_model
+学習済みモデル格納先
+
 </details>
 
-# Requirement
-Tensorflow 2.3.0 or later<br>
+# 必要条件
+Tensorflow 2.3.0<br>
 OpenCV 3.4.2 or later
 
-# Overview
+# 概要
 1. VoTT：アノテーション
 1. Colaboratory：Object Detection API設定
 1. パイプラインコンフィグ修正
 1. Colaboratory：モデル訓練
 1. Colaboratory：推論
 
-# Preparations
+# 準備
 事前準備として以下が必要です。
 * このリポジトリのローカル環境へのクローン
 * [VoTT](https://github.com/microsoft/VoTT)のインストール
